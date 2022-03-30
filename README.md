@@ -1,5 +1,5 @@
 # Programming Project #1: Tic Tac Toe
-A Tic Tac Toe game you ca play against other people
+A Tic Tac Toe game you can play against other people
 
 ## GUI Image #1:
 ## GUI Image #1:
