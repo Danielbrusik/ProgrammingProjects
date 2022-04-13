@@ -1,4 +1,4 @@
-# Programming Project #1: Tic Tac Toe
+# Programming Project #1: Chess
 A Tic Tac Toe game you can play against other people
 
 ## GUI Image #1:
@@ -11,7 +11,7 @@ A Tic Tac Toe game you can play against other people
 A hangman game you can play with other people
 
 ## GUI Image #2:
-## GUI Image #2:
+## GUI Image #2:           
 ## GUI Image #2:
 
 ## Class Diagram
