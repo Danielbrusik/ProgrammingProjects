@@ -1,4 +1,4 @@
-# Programming Project #1: tictac toe
+# Programming Project #1: tic tac toe
 A Tic Tac Toe game you can play against other people
 
 ## Start #1:
