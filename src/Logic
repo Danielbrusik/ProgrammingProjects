@@ -1,1 +1,26 @@
-
+while True:
+  word_string = ""
+  for letter in word.lower():
+    if letter in guessed_letters or letter == " ":         
+      word_string += letter
+    else:
+      word_string += "_"
+  print(word_string)
+  if word_string == word.lower():
+    print("You won!")
+    word = random.choice(word_list)
+    guessed_letters = []
+    picture_index = 0
+  else:
+    user_input = input("Enter a letter:")
+    if len(user_input) > 0 and user_input[0].lower() in word.lower() and not user_input[0].lower() in guessed_letters:
+      print("Great guess!")
+    else:
+      print("Nice try!")
+      picture_index += 1
+    print(hangman_pictures[picture_index])
+    if picture_index == len(hangman_pictures) - 1:
+      break  
+    if len(user_input) > 0 and not user_input[0].lower() in guessed_letters:
+      guessed_letters.append(user_input.lower()[0])
+    print("Guessed Letters: " + str(guessed_letters))
