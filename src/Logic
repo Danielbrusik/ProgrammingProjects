@@ -1,4 +1,12 @@
-while True:
+picture_index = 0
+guessed_letters = []
+
+printinfo()
+
+is_alive = True
+
+  
+while is_alive:
   word_string = ""
   for letter in word.lower():
     if letter in guessed_letters or letter == " ":         
@@ -8,6 +16,7 @@ while True:
   print(word_string)
   if word_string == word.lower():
     print("You won!")
+    is_alive = False
     word = random.choice(word_list)
     guessed_letters = []
     picture_index = 0
@@ -20,7 +29,3 @@ while True:
       picture_index += 1
     print(hangman_pictures[picture_index])
     if picture_index == len(hangman_pictures) - 1:
-      break  
-    if len(user_input) > 0 and not user_input[0].lower() in guessed_letters:
-      guessed_letters.append(user_input.lower()[0])
-    print("Guessed Letters: " + str(guessed_letters))
