@@ -1,5 +1,5 @@
 Word List
 import random
 
-word_list = ["He eats cake", "He sits by the fire", "red or orange or yellow or green or blue or purple or pink"]
+word_list = ["He eats cake", "He sits by the fire", "jack-o-lantern", "pineapple", "Computer Programming"]
 word = random.choice(word_list)
