@@ -29,3 +29,13 @@ while is_alive:
       picture_index += 1
     print(hangman_pictures[picture_index])
     if picture_index == len(hangman_pictures) - 1:
+      print(" ██████   █████  ███    ███ ███████      ██████  ██    ██ ███████ ██████ ")
+      print("██       ██   ██ ████  ████ ██          ██    ██ ██    ██ ██      ██   ██")
+      print("██   ███ ███████ ██ ████ ██ █████       ██    ██ ██    ██ █████   ██████ ")
+      print("██    ██ ██   ██ ██  ██  ██ ██          ██    ██  ██  ██  ██      ██   ██")
+      print(" ██████  ██   ██ ██      ██ ███████      ██████    ████   ███████ ██   ██")
+      is_alive = False
+      break  
+    if len(user_input) > 0 and not user_input[0].lower() in guessed_letters:
+      guessed_letters.append(user_input.lower()[0])
+    print("Guessed Letters: " + str(guessed_letters))
