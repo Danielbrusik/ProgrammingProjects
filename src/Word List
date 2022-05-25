@@ -1,5 +1,3 @@
-Word List
-import random
+word_list = ["He eats cake", "He sits by the fire", "jack-o-lantern", "pineapple", "Computer Programming", "Summer is near","Skyline Rocks"]
 
-word_list = ["He eats cake", "He sits by the fire", "jack-o-lantern", "pineapple", "Computer Programming"]
 word = random.choice(word_list)
